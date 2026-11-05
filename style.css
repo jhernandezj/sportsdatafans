@@ -1,0 +1,49 @@
+:root {
+  --bg: #101318;
+  --panel: #181c23;
+  --line: #2a303a;
+  --text: #e9ecf1;
+  --muted: #a3abb8;
+  --accent: #ffcc33;
+  --link: #ffd85c;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--link); }
+header.top {
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+.top .wrap { display: flex; align-items: center; gap: 14px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 19px; }
+.logo img { width: 40px; height: 40px; border-radius: 50%; }
+nav { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+nav a:hover, nav a[aria-current] { color: var(--accent); }
+.hero img { width: 100%; display: block; aspect-ratio: 16 / 6; object-fit: cover; }
+main.wrap { padding-top: 36px; padding-bottom: 48px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
+h2 { font-size: 22px; margin: 34px 0 10px; color: var(--accent); }
+h3 { font-size: 18px; margin: 22px 0 6px; }
+p, li { color: var(--text); }
+.lead { font-size: 19px; color: var(--muted); }
+.meta { color: var(--muted); font-size: 15px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 18px 0; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.card b { display: block; color: var(--accent); margin-bottom: 4px; }
+.card span { color: var(--muted); font-size: 15px; }
+.button { display: inline-block; background: var(--accent); color: #111; font-weight: 700; padding: 10px 18px; border-radius: 8px; text-decoration: none; margin: 8px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { background: var(--panel); }
+.table { overflow-x: auto; }
+footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--muted); font-size: 14px; }
+footer a { color: var(--muted); }
+footer .links { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
