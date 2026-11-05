@@ -27,7 +27,7 @@ header.top {
 nav { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
 nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
 nav a:hover, nav a[aria-current] { color: var(--accent); }
-.hero img { width: 100%; display: block; aspect-ratio: 16 / 6; object-fit: cover; }
+.hero img { width: 100%; display: block; aspect-ratio: 16 / 7; object-fit: cover; }
 main.wrap { padding-top: 36px; padding-bottom: 48px; }
 h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
 h2 { font-size: 22px; margin: 34px 0 10px; color: var(--accent); }
